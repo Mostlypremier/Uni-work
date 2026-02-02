@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetGold Honey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Bee logo.jpg" alt="SweetGold Honey Logo">
+            <h1>SweetGold Honey</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Pure, Natural, Unfiltered Honey</h2>
+        <p>Taste the golden difference. Straight from our hives to your home.</p>
+        <a href="#products" class="cta-btn">Shop Now</a>
+    </section>
+    <section id="about" class="about">
+        <h2>About SweetGold Honey</h2>
+        <p>
+            At SweetGold Honey, we are passionate about producing the highest quality honey using sustainable beekeeping practices. Our honey is 100% pure, raw, and free from additives. Each drop is carefully harvested to preserve natural flavors and nutrients.
+        </p>
+    </section>
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="images/Wildflower honey.jpg" alt="Wildflower Honey">
+                <h3>Wildflower Honey</h3>
+                <p>Sweet and floral, perfect for tea and baking.</p>
+                <span class="price">$10 / 500g</span>
+                <button onclick="addToCart('Wildflower Honey')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/Acacia honey.jpg" alt="Acacia Honey">
+                <h3>Acacia Honey</h3>
+                <p>Light, delicate flavor. Great for drizzling on desserts.</p>
+                <span class="price">$12 / 500g</span>
+                <button onclick="addToCart('Acacia Honey')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/honeycomb.jpg" alt="Honeycomb">
+                <h3>Honeycomb</h3>
+                <p>Pure honey in its most natural form, straight from the hive.</p>
+                <span class="price">$15 / 300g</span>
+                <button onclick="addToCart('Honeycomb')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Bee-utiful Moments</h2>
+        <div class="gallery-images">
+            <img src="images/Bees on honeycomb.jpg" alt="Bees on honeycomb">
+            <img src="images/Pouring honey.jpg" alt="Pouring honey">
+            <img src="images/Honey jar and dipper.jpg" alt="Honey jar and dipper">
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return handleContactForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formMsg"></div>
+    </section>
+    <footer>
+        <p>&copy; 2025 SweetGold Honey. A website made for my university project.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
